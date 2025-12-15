@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: go-app-service
   labels:
-    app:go-app
-  spec:
-    selector:
-      app: go-app
-    ports:
-      - protocol: TCP
-        port: 80
-        targetPort: 8080
-    type: ClusterIP
+    app: go-app
+spec:
+  selector:
+    app: go-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
