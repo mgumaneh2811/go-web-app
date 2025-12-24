@@ -61,7 +61,7 @@ jobs:
                   context: .
                   file: ./Dockerfile
                   push: true
-                  tags: ${{ secrets.DOCKER_USERNAME }}/go-app:${{ github.id }}
+                  tags: ${{ secrets.DOCKER_USERNAME }}/go-app:${{ github.run_id }}
 
 
     update_helm_chart:
