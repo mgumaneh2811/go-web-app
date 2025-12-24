@@ -7,8 +7,8 @@ on:
         branches:
             - main
         paths-ignore:
-            - "README.md"
-
+            - 'README.md'
+            - 'helm/**'
 jobs:
     build:
         runs-on: ubuntu-latest
