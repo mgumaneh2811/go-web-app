@@ -91,6 +91,7 @@ jobs:
               run: |
                   git config --global user.name "mgumaneh2811"
                   git config --global user.email "${{ secrets.USER_EMAIL }}"
+                  git status
                   git add helm/go-app-chart/values.yaml
                   git commit -m "Update Helm chart with new Docker image tag ${{ github.run_id }}"B || echo "No changes to commit"
                   git push
